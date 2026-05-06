@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر لمسة وردية - لإطارات الصور</title>
+    <style>
+        :root {
+            --main-pink: #ff85a2;
+            --light-pink: #fce4ec;
+            --dark-pink: #f06292;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffafb;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        /* رأس الصفحة */
+        header {
+            background-color: var(--main-pink);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* حاوية المنتجات */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* بطاقة المنتج */
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid var(--light-pink);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--main-pink);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .card-info {
+            padding: 15px;
+        }
+
+        .card-info h3 {
+            margin: 10px 0;
+            color: var(--dark-pink);
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: var(--main-pink);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: var(--dark-pink);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--light-pink);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌸 متجر لمسة وردية لإطارات الصور 🌸</h1>
+        <p>جملي ذكرياتك بإطارات فريدة</p>
+    </header>
+
+    <div class="container">
+        <!-- المنتج الأول -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x250/fce4ec/ad1457?text=Image+1" alt="إطار كلاسيكي">
+            <div class="card-info">
+                <h3>إطار كلاسيكي وردي</h3>
+                <span class="price">75 ريال</span>
+                <button class="buy-btn">أضف للسلة</button>
+            </div>
+        </div>
+
+        <!-- المنتج الثاني -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x250/fce4ec/ad1457?text=Image+2" alt="إطار مودرن">
+            <div class="card-info">
+                <h3>إطار مودرن خشبي</h3>
+                <span class="price">120 ريال</span>
+                <button class="buy-btn">أضف للسلة</button>
+            </div>
+        </div>
+
+        <!-- المنتج الثالث -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x250/fce4ec/ad1457?text=Image+3" alt="إطار ذهبي">
+            <div class="card-info">
+                <h3>إطار ملكي مزخرف</h3>
+                <span class="price">200 ريال</span>
+                <button class="buy-btn">أضف للسلة</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة لمتجر لمسة وردية &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
